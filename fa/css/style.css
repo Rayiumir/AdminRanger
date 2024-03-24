@@ -1,0 +1,133 @@
+@font-face {
+    font-family: Vazir;
+    src: url("../fonts/Vazirmatn-RD-FD-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url("../fonts/Vazirmatn-RD-FD-Bold.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+body {
+    font-family: Vazir;
+    background-color: #e8e8e8;
+    color: #222;
+}
+#wrapper {
+    overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-right: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-right: 0;
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-right: 0;
+    }
+
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        margin-right: -15rem;
+    }
+}
+a#menu-toggle {
+    margin-right: 15px;
+}
+
+/* Sidebar */
+
+.sidebar{
+    width: 240px;
+}
+
+.p-section-faq__item:nth-of-type(n+2) {
+    margin-top: 32px;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    color: #212529;
+    cursor: pointer;
+}
+.icon {
+    display: block;
+    flex-shrink: 0;
+    position: relative;
+    width: 16px;
+    transform-origin: center;
+}
+.icon::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    transition: transform .3s;
+    transform: translateY(-80%) rotate(45deg);
+    border-right: 2px solid #212529;
+    border-bottom: 2px solid #212529;
+}
+
+.is-opened .icon::after {
+    transform: translateY(-25%) rotate(-135deg);
+}
+
+.content {
+    overflow: hidden;
+}
+
+figure.avatar img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #e8e8e8;
+}
+/* Logo */
+
+figure.imgLogo img{
+    width: 200px;
+}
+
+/* Content */
+
+.icons, .texts{
+    display: inline-block;
+}
+
+
