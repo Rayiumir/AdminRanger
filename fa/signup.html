@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پنل رنجر</title>
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/chart.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js">
+</head>
+<body>
+<div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+        <div class="sidebar-heading text-center">
+            <figure class="imgLogo">
+                <img src="../art/Ranger.png" alt="" srcset="">
+            </figure>
+        </div>
+        <div class="mt-5 p-3 ">
+            <div class="d-grid gep-3">
+                <a href="index.html" class="btn btn-outline-secondary text-start border-0 rounded-3 mb-2"><i class="fa-duotone fa-home me-2"></i> پیشخوان </a>
+            </div>
+
+            <details class="js-list mt-2 mb-2">
+                <summary class="title js-title"><i class="fa-duotone fa-layer-plus"></i> نمونه ها <span class="icon"></span></summary>
+                <div class="card rounded-3 mt-3 js-content">
+                    <div class="card-body">
+                        <ul>
+                            <li class="mb-2"><a href="signup.html" class="text-decoration-none text-dark">ورود / عضویت</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </details>
+
+        </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="#" id="menu-toggle">
+                <span class="navbar-toggler-icon"></span>
+            </a>
+        </nav>
+
+        <div class="container">
+            <div class="mt-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card rounded-4">
+                            <div class="card-body">
+                                <div class="text-center">
+                                    <i class="fa-duotone fa-sign-in fa-4x"></i>
+                                </div>
+                                <form class="mt-5">
+                                    <div class="mb-3">
+                                        <label for="Email1" class="form-label">آدرس ایمیل یا نام کاربری</label>
+                                        <input type="email" class="form-control rounded-5" id="Email1" aria-describedby="emailHelp">
+                                        <div id="emailHelp" class="form-text">ما هرگز ایمیل شما را با دیگران به اشتراک نمی گذاریم.</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="Password1" class="form-label">رمز عبور</label>
+                                        <input type="password" class="form-control rounded-5" id="Password1">
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input rounded-5" id="Check1">
+                                        <label class="form-check-label" for="Check1">مرا به خاطر بسپار</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary rounded-5"><i class="fa-duotone fa-send"></i> ورود به سایت </button>
+                                    <a class="btn btn-link text-decoration-none text-danger" href="#">
+                                        فراموشی رمز عبور؟
+                                    </a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card rounded-4">
+                            <div class="card-body">
+                                <div class="text-center">
+                                    <i class="fa-duotone fa-user-plus fa-4x"></i>
+                                </div>
+                                <form class="mt-5">
+                                    <div class="mb-3">
+                                        <label for="input1" class="form-label">نام و نام خانوادگی</label>
+                                        <input type="text" class="form-control rounded-5" id="input1">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="Email2" class="form-label">آدرس ایمیل </label>
+                                        <input type="email" class="form-control rounded-5" id="Email2" aria-describedby="emailHelp1">
+                                        <div id="emailHelp1" class="form-text">ما هرگز ایمیل شما را با دیگران به اشتراک نمی گذاریم.</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="input2" class="form-label">شماره موبایل</label>
+                                        <input type="number" class="form-control rounded-5" id="input2">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="Password2" class="form-label">رمز عبور</label>
+                                        <input type="password" class="form-control rounded-5" id="Password2">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="Password3" class="form-label">رمز عبور مجدد</label>
+                                        <input type="password" class="form-control rounded-5" id="Password3">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary rounded-5"><i class="fa-duotone fa-plus"></i> عضویت در سایت </button>
+                                    <a class="btn btn-link text-decoration-none text-success" href="#">
+                                        قبلا عضو سایت شدید؟ وارد شوید.
+                                    </a>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+<!-- Script -->
+<script src="js/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
