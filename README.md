@@ -8,3 +8,4 @@
 ## About Ranger
 
 A Admin Panel Simple and Efficient for is Creating Page Admin with bootstrap 5.
+
